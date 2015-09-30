@@ -1,6 +1,6 @@
-# setup sandbox-1
+## setup sandbox-1
 take the following step
-## install tools
+### install tools
 ```
 # install nginx
 sudo apt-get update
@@ -9,7 +9,7 @@ sudo apt-get install nginx
 # install git
 sudo apt-get install git
 ```
-## setup nginx
+### setup nginx
 ```
 sudo vi /etc/nginx/sites-available/default
 
@@ -19,7 +19,7 @@ sudo vi /etc/nginx/sites-available/default
 # root /usr/share/nginx/html;
 root /home/vagrant/html;
 ```
-## place files
+### place files
 ```
 # git clone
 git clone https://github.com/matchy109/cookie-sync-simulation.git
@@ -27,7 +27,7 @@ git clone https://github.com/matchy109/cookie-sync-simulation.git
 # move files
 mv cookie-sync-simulation/sandbox-1/html ~/.
 ```
-## restart nodejs
+### restart nodejs
 ```
 sudo service nginx restart
 ```

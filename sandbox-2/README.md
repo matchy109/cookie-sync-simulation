@@ -1,6 +1,6 @@
-# setup sandbox-2
+## setup sandbox-2
 take the following step
-## install tools
+### install tools
 ```
 # install nodejs
 sudo add-apt-repository ppa:chris-lea/node.js
@@ -13,7 +13,7 @@ sudo apt-get install nginx
 # install git
 sudo apt-get install git
 ```
-## setup nginx
+### setup nginx
 ```
 sudo vi /etc/nginx/sites-available/default
 
@@ -32,7 +32,7 @@ location /cookie-sync {
 }
 
 ```
-## place files
+### place files
 ```
 # git clone
 git clone https://github.com/matchy109/cookie-sync-simulation.git
@@ -41,12 +41,12 @@ git clone https://github.com/matchy109/cookie-sync-simulation.git
 mv cookie-sync-simulation/sandbox-2/html ~/.
 mv cookie-sync-simulation/sandbox-2/nodejs ~/.
 ```
-## start nodejs
+### start nodejs
 ```
 node nodejs/cookie-passer.js &
 ps aux | grep cookie-passer
 ```
-## restart nodejs
+### restart nodejs
 ```
 sudo service nginx restart
 ```
