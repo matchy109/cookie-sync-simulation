@@ -2,6 +2,9 @@
 This is simulation to learn how we can create cross domain cookie-sync with javascript
 
 ## cookie-sync timeline
+![cookie-sync-timeline](https://raw.githubusercontent.com/matchy109/cookie-sync-simulation/master/image/cookie-sync-timeline.png)
+
+### steps
 1. show sandbox-2 web page
  1. access to sandbox-2 web page with web browser
  2. get html and javascript from nginx on sandbox-2
@@ -63,4 +66,4 @@ vagrant ssh sandbox-2
 
 ### check and feel cookie-sync
 * access the "http://www.sandbox-2.com" with web browser (chrome or firefox)
- * should show web page
+ * should show sandbox-2 web page and redirect to sandbox-1 web page
