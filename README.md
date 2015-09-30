@@ -1,7 +1,17 @@
 # cookie-sync-simulation
-This is simulation to learn how we can create cross domein cookie-sync with javascript
+This is simulation to learn how we can create cross domain cookie-sync with javascript
 
 ## cookie-sync timeline
+1. access to sandbox-2 web page
+2. run javascript on web browser
+ 1. issue sandbox-2 domain cookie
+ 2. redirect to sandbox-1 web page in 5 sec
+3. show sandbox-1 web page
+4. run javascript on web browser
+ 1. access to sandbox-2 nodejs script and get sandbox-2 domain cookie
+ 2. issue sandbox-1 domain cookie
+ 3. insert cookie info to web page
+5. check cross domain cookie-sync info on web browser
 
 ## setup local pc (Mac)
 take the following steps
