@@ -67,3 +67,4 @@ vagrant ssh sandbox-2
 ### check and feel cookie-sync
 * access the "http://www.sandbox-2.com" with web browser (chrome or firefox)
  * should show sandbox-2 web page and redirect to sandbox-1 web page
+ ![cookie-sync-timeline](https://raw.githubusercontent.com/matchy109/cookie-sync-simulation/master/image/sandboxs-web-page.png)
