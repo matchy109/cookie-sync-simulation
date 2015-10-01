@@ -54,12 +54,12 @@ vagrant up
 ### setup sandbox-1 and sandbox-2
 ```
 # login to sandbox-1
-vagrant ssh sandbox-1
+vagrant ssh sandbox1
 
 # take sandbox-1/README.md steps after you login
 
 # login to sandbox-2
-vagrant ssh sandbox-2
+vagrant ssh sandbox2
 
 # take sandbox-1/README.md steps after you login
 ```
@@ -69,3 +69,21 @@ vagrant ssh sandbox-2
  * show sandbox-2 web page and redirect to sandbox-1 web page
  ![cookie-sync-timeline](https://raw.githubusercontent.com/matchy109/cookie-sync-simulation/master/image/sandboxs-web-page.png)
  * check cookie-sync result on sandbox-1 web page
+
+## knowledge of settings for cross domain
+should set the following value
+
+### crient
+set true as withCredentials to XMLHttpRequest object if you use javascript
+```
+xhr.withCredentials = true;
+```
+
+### server
+set the following value in http header field
+
+|field|value|
+|---|---|
+|Access-Control-Allow-Origin|http://www.sandbox-1.com|
+|Access-Control-Allow-Credentials|true|
+|Access-Control-Allow-Headers|Origin, X-Requested-With, Content-Type, Accept|

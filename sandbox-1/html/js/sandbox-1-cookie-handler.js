@@ -20,15 +20,15 @@ window.onload = function() {
 
   setCookie('cookie-sync', Math.random().toString(36).slice(-10), 7)
   target = document.getElementById("sandbox-1-cookie");
-  target.innerHTML = document.cookie.split("=")[1];	
+  target.innerHTML = document.cookie.split("=")[1];
 
   xhr.open("GET", "http://www.sandbox-2.com/cookie-sync", true);
   xhr.withCredentials = true;
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
-        var data = xhr.responseText;
-	target = document.getElementById("sandbox-2-cookie");
-        target.innerHTML = data.split("=")[1];
+      var data = xhr.responseText;
+      target = document.getElementById("sandbox-2-cookie");
+      target.innerHTML = data.split("=")[1];
     }
   }
   xhr.send();

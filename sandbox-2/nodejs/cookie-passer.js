@@ -11,9 +11,9 @@ function doRequest(req, res) {
     res.writeHead(200, {
 		'Content-Type': 'text/plain',
     		'Access-Control-Allow-Origin': 'http://www.sandbox-1.com',
-                'Access-Control-Allow-Credentials': 'true',
-		//'Access-Control-Allow-Methods': 'GET',
-                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+        'Access-Control-Allow-Credentials': 'true',
+		     //'Access-Control-Allow-Methods': 'GET',
+        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
 		});
     res.write(cookie + '\n');
     res.end();
