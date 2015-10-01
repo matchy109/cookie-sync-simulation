@@ -73,14 +73,15 @@ vagrant ssh sandbox2
 ## knowledge of settings for cross domain
 should set the following value
 
-### crient
+### client 
 set true as withCredentials to XMLHttpRequest object if you use javascript
 ```
 xhr.withCredentials = true;
 ```
+you can see cookie field in http header after setting
 
 ### server
-set the following value in http header field
+set the following value in http header fields
 
 |field|value|
 |---|---|
