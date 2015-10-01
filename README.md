@@ -1,7 +1,7 @@
 # cookie-sync-simulation
 This is simulation to learn how we can create cross domain cookie-sync with javascript
 
-## cookie-sync timeline
+## cookie-sync flow
 ![cookie-sync-timeline](https://raw.githubusercontent.com/matchy109/cookie-sync-simulation/master/image/cookie-sync-timeline.png)
 
 ### steps
@@ -73,7 +73,7 @@ vagrant ssh sandbox2
 ## knowledge of settings for cross domain
 should set the following value
 
-### client 
+### client
 set true as withCredentials to XMLHttpRequest object if you use javascript
 ```
 xhr.withCredentials = true;
